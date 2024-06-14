@@ -1,0 +1,155 @@
+.container{
+	width: 1440px;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	border-bottom: 1px solid #ccc;
+}
+.header_left{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+table{
+	width: 100%;
+	font-size: 18px;
+}
+tr{
+	width: 1440px;
+	margin: 0 auto;
+}
+th {
+	padding: 50px;
+	color: #ccc;
+}
+
+tr > th:last-child{
+	padding: 5px;
+}
+
+select {
+	width: 220px;
+	color: #000;
+	font-size: 18px;
+	padding: 15px;
+	background-color: #F2F2F2;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	appearance: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+	
+	position: relative;
+}
+select::after{
+	position: absolute;
+	content: '';
+	background: url("../img/down.svg") no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+	top: 0;
+	right: 0;
+}
+
+.toggle-bg{
+	background: #222;
+	display: block; 
+	float: left; 
+	height: 23px; 
+	position: relative; 
+	width: 60px; 
+	border-radius: 10px;
+	background: #F2F2F2;
+	box-shadow: 0 1px 0 #fff, inset 0 0 2px #d7dee3, inset 0 1px 0 #d7dee3, inset 0 1px 5px #d7dee3;
+}
+
+.toggle-bg input{
+	height: 32px;
+	left: 0;
+	margin: 0; 
+	opacity: 0; 
+	padding: 0;
+	position: absolute;
+	top: -10px; 
+	width: 36px;
+	z-index: 2; 
+}
+
+.switch{
+	background: #fff;
+	display: block;
+	float: left;
+	height: 20px;
+	left: 0; 
+	position: relative;
+	top: 0;
+	width: 20px;
+	z-index: 1; 
+	border-radius: 50%;
+}
+
+.toggle-bg input:checked~.switch{ left: 0; } 
+
+.toggle-bg input~:checked~.switch{ left: 57%; } 
+
+.toggle-bg input:checked{ z-index: 0; }
+
+.button_arrow{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.img_arrow{
+	width: 20px;
+	height: 20px;
+}
+
+.box{
+	position: relative;
+  background-color: #fff; /* Цвет фона контента */
+  overflow: hidden;
+  max-height: 0; /* Скрываем контент */
+  transition: 0.3s; /* Для плавности анимации */
+}
+
+.delete{
+	background: transparent;
+	border: none;
+	
+}
+.delete_img{
+	width: 24px;
+	height: 24px;
+}
+
+.add-component{
+	background-color: #F4F5FD;
+	color: #8E98EC;
+	width: 100%;
+	border: none;
+	padding: 10px 0;
+	border-radius: 15px;
+	font-size: 18px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.header_right{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.img{
+	width: 50px;
+}
+.logo{
+	width: 100%;
+	height: auto;
+	
+}
